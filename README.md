@@ -40,7 +40,7 @@ Por ultimo click en el boton ver datos academico mustres una pantalla con mis da
 
 
 Realizado por: Carlos Andres Paredes Leon 
-UNIVERSIDAD TECNOLOGIA ECOTEC
+UNIVERSIDAD TECNOLOGICA ECOTEC
 
 
 
