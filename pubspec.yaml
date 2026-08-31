@@ -1,7 +1,6 @@
-name: mi_primera_app
-description: "Perfil interactivo en Flutter"
+name: flutter_perfil_academico
+description: Portafolio Academico y Profesional Completo
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
@@ -10,13 +9,15 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
-  google_fonts: ^6.1.0
+  cupertino_icons: ^1.0.2
+  url_launcher: ^6.2.5  # Paquete externo para enlaces y redes
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^3.0.0
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/perfilacademico.png  # Asegúrate de colocar tu foto/logo en esta carpeta
