@@ -41,33 +41,33 @@ La aplicación cumple y supera la estructura requerida para un portafolio intera
 
 ## NOMBRE DE MI APP ACADEMICO SE ENCUENTRA REALIZADO EL CAMBIO DE ICONO PARA MI APLICACIÓN 
 
-![alt text](image.png)
+![APP Academico](assets/image.png)
 
 ## INGRESAMOS A LA APLICACIÓN A APARECE LA PRIMERA PANTALLA EN DONDE MUESTRA MIS DATOS Y EN LA PARTE INFERIOR LOS 4 BOTONES PARA NAVEGAR EN LA APP
 
-![alt text](image-1.png)
+![Perfil](assets/image-1.png)
 
 ## NOS DIRIGIMOS AL BOTÓN HABILIDADES Y ENCONTRAMOS LOS LENGUAJES DE PROGRAMACIÓN QUE UTILIZO
 
-![alt text](image-2.png)
+![Habilidades técnicas](assets/image-2.png)
 
 ## VAMOS A BOTÓN PROYECTOS EN EL CUAL MUESTRA 3 PROYECTOR INTEGRADORES SE PUEDE DAR QLICK EN CADA UNO DE ELLOS Y VA A APARECER UN DIALOG CON UNA DESCRIPCIÓN, TAMBIEN SE PUEDE COLOCAR EN LA ESTRELLITA COMO FAVORITA Y CAMBIA DE COLOR
 
-![alt text](image-3.png)
+![Proyectos integradores](assets/image-3.png)
 
-![alt text](image-4.png)
+![Descripción](assets/image-4.png)
 
-![alt text](image-5.png)
+![Favoritos](assets/image-5.png)
 
 ## POR ULTIMO EL BOTÓN CONTACTO MUESTRA UN RECUADRO EN EL CUAL PUEDE ENVIAR UN MENSAJE DA CLICK Y VA A PARECER EL MENSJAE HA SIDO ENVIADO CORRECTAMENTE 
 
-![alt text](image-6.png)
+![Escribir un mensaje](assets/image-6.png)
 
-![alt text](image-7.png)
+![Mensaje enviado con exito](assets/image-7.png)
 
 ## ADICIONAL EN REDES ACADEMICAS/ENLACES COLOQUÉ UN BOTÓN QUE LE REDIRECCIONA A MI ACTIVIDAD INTEGRADORA 2 DANDO CLICK 
 
-![alt text](image-8.png)
+![Boton redes academicas/enlaces](assets/image-8.png)
 
-![alt text](image-9.png)
+![Redirrecciona a la actividad integradora 2](assets/image-9.png)
 
