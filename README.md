@@ -1,49 +1,73 @@
-# mi_primera_app
+# ACTIVIDAD INTEGRADORA 2
 
-1. Ejecucion comando Flutter doctor
-2. <img width="1623" height="464" alt="image" src="https://github.com/user-attachments/assets/8e675861-a2ad-4308-b552-dcb117b8b830" />
-Todo sin problemas.
+# 📱 Portafolio Académico y Profesional
 
-Emulador Android
-<img width="1841" height="1029" alt="image" src="https://github.com/user-attachments/assets/120979fb-f92a-46b2-b0ad-4e5b30e822b8" />
-Funcionando correctamente 
+Aplicación móvil desarrollada en **Flutter** y **Dart** que presenta un portafolio personal interactivo, estructurado bajo una arquitectura de pantallas integradas y diseñada para resaltar perfil académico, competencias técnicas, proyectos integradores y canales de contacto.
 
-Emulador Google Chrome
+---
 
-<img width="1869" height="1078" alt="image" src="https://github.com/user-attachments/assets/14197663-0b73-4b4e-8605-f9a95e90a2b8" />
+## 🚀 Características y Requerimientos Implementados
 
-Funcionando correctamente
+La aplicación cumple y supera la estructura requerida para un portafolio interactivo:
 
-Carpetas segun el esquema de programación visual estudio 
-<img width="1211" height="941" alt="image" src="https://github.com/user-attachments/assets/7e8468ea-0c71-4dbd-a4cd-7da494f43dfe" />
+1. **Estructura Multipantalla (4 Pantallas principales):**
+   * **Perfil (`HomeScreen`):** Presentación del perfil académico, universidad, carrera y enfoque profesional.
+   * **Habilidades (`SkillsScreen`):** Grid interactivo de competencias técnicas con colores e íconos temáticos personalizados por tecnología.
+   * **Proyectos (`ProjectsScreen`):** Lista de proyectos integradores con cuadros de diálogo en detalle (`AlertDialog`) y sistema de favoritos dinámico.
+   * **Contacto (`ContactScreen`):** Formulario directo con notificaciones activas (`SnackBar`) y accesos directos a redes externas.
 
-Esquemas y dependencias 
-<img width="1845" height="1058" alt="image" src="https://github.com/user-attachments/assets/f0ee66ae-3aa6-4b45-8bb1-e5d5bee403a0" />
+2. **Widgets Incorporados:**
+   `Scaffold`, `AppBar`, `BottomNavigationBar`, `ListView`, `GridView`, `Card`, `ListTile`, `CircleAvatar`, `Divider`, `Icon`, `ElevatedButton`, `IconButton`, `Padding`, `SizedBox`, `Expanded`, `Container`.
 
-<img width="1324" height="980" alt="image" src="https://github.com/user-attachments/assets/3270ca2d-d304-41aa-b272-156c60aa4aa4" />
+3. **Interacción y Navegación:**
+   * Navegación fluida por pestañas utilizando `BottomNavigationBar`.
+   * Feedback interactivo con `SnackBar` al enviar formularios.
+   * Modales de información detallada (`AlertDialog`) al interactuar con proyectos.
 
-Paquetes agregados en Pubspec.yaml
-<img width="1513" height="816" alt="image" src="https://github.com/user-attachments/assets/40599f3c-d4c7-4ac2-b202-730ffd5da099" />
+4. **Personalización Visual:**
+   * Paleta de colores institucionales en tonos azul marino (`#1A365D`) y celeste (`#2B6CB0`).
+   * Íconos y lanzadores de aplicación nativos personalizados para Android e iOS.
 
+5. **Paquete Externo Integrado:**
+   * `url_launcher`: Para la apertura de enlaces externos y redes profesionales (GitHub, LinkedIn).
 
-Emulador con los botones funcionales click en seguidores aumenta un seguidor click en el corazón aumenta u  seguidor, click en el boton con el ícono de la luna cambia a obscuro el ambiente 
+6. **Gestión de Estado Básico (`setState`):**
+   * Alternancia y marcado de proyectos favoritos en tiempo real.
+   * Filtro y visibilidad de descripciones técnicas en la sección de habilidades.
 
-<img width="1852" height="1080" alt="image" src="https://github.com/user-attachments/assets/629c748d-8e86-492f-98d7-f0c43bfde711" />
+---
 
-<img width="1887" height="1079" alt="image" src="https://github.com/user-attachments/assets/c56be0e2-1245-474c-ac4b-4f7b642ed0e1" />
+# FUNCIONAMIENTO DE MI APP PERFIL ACADEMICO
 
-Por ultimo click en el boton ver datos academico mustres una pantalla con mis datos 
+## NOMBRE DE MI APP ACADEMICO SE ENCUENTRA REALIZADO EL CAMBIO DE ICONO PARA MI APLICACIÓN 
 
-<img width="1782" height="1023" alt="image" src="https://github.com/user-attachments/assets/899fdfb8-986c-4f87-9fa7-1644f5f44649" />
+![alt text](image.png)
 
-<img width="1862" height="1080" alt="image" src="https://github.com/user-attachments/assets/7b2f2260-0924-41ab-a958-8eddf176f59e" />
+## INGRESAMOS A LA APLICACIÓN A APARECE LA PRIMERA PANTALLA EN DONDE MUESTRA MIS DATOS Y EN LA PARTE INFERIOR LOS 4 BOTONES PARA NAVEGAR EN LA APP
 
+![alt text](image-1.png)
 
-Realizado por: Carlos Andres Paredes Leon 
-UNIVERSIDAD TECNOLOGICA ECOTEC
+## NOS DIRIGIMOS AL BOTÓN HABILIDADES Y ENCONTRAMOS LOS LENGUAJES DE PROGRAMACIÓN QUE UTILIZO
 
+![alt text](image-2.png)
 
+## VAMOS A BOTÓN PROYECTOS EN EL CUAL MUESTRA 3 PROYECTOR INTEGRADORES SE PUEDE DAR QLICK EN CADA UNO DE ELLOS Y VA A APARECER UN DIALOG CON UNA DESCRIPCIÓN, TAMBIEN SE PUEDE COLOCAR EN LA ESTRELLITA COMO FAVORITA Y CAMBIA DE COLOR
 
+![alt text](image-3.png)
 
+![alt text](image-4.png)
 
+![alt text](image-5.png)
+
+## POR ULTIMO EL BOTÓN CONTACTO MUESTRA UN RECUADRO EN EL CUAL PUEDE ENVIAR UN MENSAJE DA CLICK Y VA A PARECER EL MENSJAE HA SIDO ENVIADO CORRECTAMENTE 
+
+![alt text](image-6.png)
+
+![alt text](image-7.png)
+
+## ADICIONAL EN REDES ACADEMICAS/ENLACES COLOQUÉ UN BOTÓN QUE LE REDIRECCIONA A MI ACTIVIDAD INTEGRADORA 2 DANDO CLICK 
+
+![alt text](image-8.png)
+
+![alt text](image-9.png)
 
