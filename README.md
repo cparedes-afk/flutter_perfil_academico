@@ -60,7 +60,7 @@ Una vez que se me guarda el curso vamos al botón guardados y va a aparecer el c
 
 Vamos al botón resumen y va a aparecer el total de cursos y el total de creditos 
 
-![totalcursos](image.png)
+![totalcursos](assets//totalcursos.png)
 
 Sino deseamos ese curso damos click en el curso guardado y podemos quitar el curso e inmeditamente el cotador vuelve a 0 o a su vez a los cursos que esten guardados
 
