@@ -10,7 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
-  url_launcher: ^6.2.5  # Paquete externo para enlaces y redes
+  url_launcher: ^6.2.5
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
@@ -20,4 +21,4 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/perfilacademico.png  # Asegúrate de colocar tu foto/logo en esta carpeta
+    - assets/perfilacademico.png

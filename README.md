@@ -1,73 +1,88 @@
-# ACTIVIDAD INTEGRADORA 2
+# ACTIVIDAD INTEGRADORA 3
 
-# 📱 Portafolio Académico y Profesional
+# 🎓 Mi Aplicación de Gestión de Cursos Académicos
 
-Aplicación móvil desarrollada en **Flutter** y **Dart** que presenta un portafolio personal interactivo, estructurado bajo una arquitectura de pantallas integradas y diseñada para resaltar perfil académico, competencias técnicas, proyectos integradores y canales de contacto.
+Autor:  **Carlos Andrés Paredes León**. He desarrollado esta aplicación móvil multiplataforma utilizando **Flutter** y **Dart** como parte de mis proyectos de ingeniería en la Universidad Tecnológica ECOTEC. El objetivo principal de este proyecto es ofrecer una experiencia de usuario fluida e intuitiva para la exploración de asignaturas, consulta de detalles e inscripción dinámica de cursos.
 
----
-
-## 🚀 Características y Requerimientos Implementados
-
-La aplicación cumple y supera la estructura requerida para un portafolio interactivo:
-
-1. **Estructura Multipantalla (4 Pantallas principales):**
-   * **Perfil (`HomeScreen`):** Presentación del perfil académico, universidad, carrera y enfoque profesional.
-   * **Habilidades (`SkillsScreen`):** Grid interactivo de competencias técnicas con colores e íconos temáticos personalizados por tecnología.
-   * **Proyectos (`ProjectsScreen`):** Lista de proyectos integradores con cuadros de diálogo en detalle (`AlertDialog`) y sistema de favoritos dinámico.
-   * **Contacto (`ContactScreen`):** Formulario directo con notificaciones activas (`SnackBar`) y accesos directos a redes externas.
-
-2. **Widgets Incorporados:**
-   `Scaffold`, `AppBar`, `BottomNavigationBar`, `ListView`, `GridView`, `Card`, `ListTile`, `CircleAvatar`, `Divider`, `Icon`, `ElevatedButton`, `IconButton`, `Padding`, `SizedBox`, `Expanded`, `Container`.
-
-3. **Interacción y Navegación:**
-   * Navegación fluida por pestañas utilizando `BottomNavigationBar`.
-   * Feedback interactivo con `SnackBar` al enviar formularios.
-   * Modales de información detallada (`AlertDialog`) al interactuar con proyectos.
-
-4. **Personalización Visual:**
-   * Paleta de colores institucionales en tonos azul marino (`#1A365D`) y celeste (`#2B6CB0`).
-   * Íconos y lanzadores de aplicación nativos personalizados para Android e iOS.
-
-5. **Paquete Externo Integrado:**
-   * `url_launcher`: Para la apertura de enlaces externos y redes profesionales (GitHub, LinkedIn).
-
-6. **Gestión de Estado Básico (`setState`):**
-   * Alternancia y marcado de proyectos favoritos en tiempo real.
-   * Filtro y visibilidad de descripciones técnicas en la sección de habilidades.
+###
 
 ---
 
-# FUNCIONAMIENTO DE MI APP PERFIL ACADEMICO
+## 🛠️ Elementos e Implementaciones Desarrolladas
 
-## NOMBRE DE MI APP ACADEMICO SE ENCUENTRA REALIZADO EL CAMBIO DE ICONO PARA MI APLICACIÓN 
+En el desarrollo de esta aplicación he integrado los siguientes módulos y componentes clave:
 
-![APP Academico](assets/image.png)
+### 1. Gestión de Estado Global (`CursoProvider`)
+* **Patrón Provider:** Implementé un `ChangeNotifierProvider` en el nivel superior del árbol de widgets (`main.dart`) para garantizar que la información de los cursos esté accesible de forma global en toda la app.
+* **Sincronización en Tiempo Real:** Diseñé la lógica central mediante `CursoProvider` para administrar la lista de asignaturas guardadas o inscritas, sincronizando los cambios al instante entre las vistas de *Cursos*, *Guardados* y *Resumen*.
+* **Cálculos Automáticos:** Programé métodos reactivos (`totalCreditos` y `totalCosto`) para procesar en tiempo real el costo total financiero y la carga horaria acumulada de las materias seleccionadas.
+* **Compatibilidad Flexible:** Añadí alias y adaptadores (`esInscrito` / `esGuardado`, `toggleInscripcion` / `toggleGuardar`) para asegurar la interoperabilidad entre diferentes pantallas sin romper contratos de interfaz.
 
-## INGRESAMOS A LA APLICACIÓN A APARECE LA PRIMERA PANTALLA EN DONDE MUESTRA MIS DATOS Y EN LA PARTE INFERIOR LOS 4 BOTONES PARA NAVEGAR EN LA APP
+### 2. Tarjeta Reutilizable de Curso (`CursoCard`)
+* **Extracción Defensiva de Datos:** Diseñé un mecanismo de lectura dinámica de propiedades (`_obtenerPropiedad`) que me permite renderizar correctamente objetos de cursos incluso si las variables provienen con nombres distintos (`titulo`, `nombre`, `title`, `costo`, `precio`, `price`). Esto previene fallos de renderizado en runtime (`NoSuchMethodError`).
+* **Indicadores Visuales Relevantes:** Incluí un botón de marcador dinámico que cambia de estilo e ícono (marcador lleno color índigo / marcador bordeado gris) para reflejar inmediatamente si el curso forma parte de mi lista guardada.
 
-![Perfil](assets/image-1.png)
+### 3. Vista Detallada de Asignaturas (`DetailScreen`)
+* **Sábana Modal y Pantalla Standalone:** Desarrollé una experiencia de visualización del detalle del curso, desplegando información completa como banner de imagen, costo, créditos y descripción.
+* **Botón de Acción Dinámico:** Implementé una acción contextual que alterna entre *"Añadir Curso"* (verde/índigo) y *"Quitar de Mis Cursos"* (rojo), proporcionando retroalimentación inmediata al usuario mediante `SnackBar`.
 
-## NOS DIRIGIMOS AL BOTÓN HABILIDADES Y ENCONTRAMOS LOS LENGUAJES DE PROGRAMACIÓN QUE UTILIZO
+### 4. Resumen de Matrícula y Perfil (`ProfileScreen`)
+* **Métricas Principales:** Diseñé un panel superior (*Dashboard Card*) que resume en tres columnas principales el Total de Cursos seleccionados, la suma de Créditos acumulados y el Valor Total de la matrícula.
+* **Estado Vacío Adaptativo:** Configuré una vista de respaldo para notificar cuando no he seleccionado materias en el sistema.
 
-![Habilidades técnicas](assets/image-2.png)
+---
 
-## VAMOS A BOTÓN PROYECTOS EN EL CUAL MUESTRA 3 PROYECTOR INTEGRADORES SE PUEDE DAR QLICK EN CADA UNO DE ELLOS Y VA A APARECER UN DIALOG CON UNA DESCRIPCIÓN, TAMBIEN SE PUEDE COLOCAR EN LA ESTRELLITA COMO FAVORITA Y CAMBIA DE COLOR
+### 5. Funcionamiento del APP
 
-![Proyectos integradores](assets/image-3.png)
+Al iniciar la aplicación nos aparecerá la primera pantalla en dónde se debe ingresar un usuario o correo, acontinuación la contraseña 12345 o la que desee.
 
-![Descripción](assets/image-4.png)
+![image](assets/image.png)
 
-![Favoritos](assets/image-5.png)
+Iniciamos sesión y va a aparecer la ventana de Perfil Academico en el cual se detallan la universidad, enfoque técnico, botón para redireccionar a la pagina de github, y colocar tambien algun comentario.
 
-## POR ULTIMO EL BOTÓN CONTACTO MUESTRA UN RECUADRO EN EL CUAL PUEDE ENVIAR UN MENSAJE DA CLICK Y VA A PARECER EL MENSJAE HA SIDO ENVIADO CORRECTAMENTE 
+![Perfil](assets/Perfil.png)
 
-![Escribir un mensaje](assets/image-6.png)
+Luego vamos a botón de cursos en el cual damos click y nos aparece en lista los cusros para poder escoger el que queramos 
 
-![Mensaje enviado con exito](assets/image-7.png)
+![cursos](assets/cursos.png)
 
-## ADICIONAL EN REDES ACADEMICAS/ENLACES COLOQUÉ UN BOTÓN QUE LE REDIRECCIONA A MI ACTIVIDAD INTEGRADORA 2 DANDO CLICK 
+Damos click en cualquiero curso y no va a aparecer un apartado en donde indica si deseamos añadir el curso con una descrpción los créditos y el valos del mismo.
 
-![Boton redes academicas/enlaces](assets/image-8.png)
+![elegircurso](assets/elegircurso.png)
 
-![Redirrecciona a la actividad integradora 2](assets/image-9.png)
+Al dar click en añadir curso va a aparecer la opción de quitar curso en caso que lo desee sino se va a habilitar la opción favoritos
 
+![anadircurso](assets//anadircurso.png)
+
+Una vez que se me guarda el curso vamos al botón guardados y va a aparecer el curso que acabo de añadir 
+
+![cursoguardado](assets//cursoguardado.png)
+
+Vamos al botón resumen y va a aparecer el total de cursos y el total de creditos 
+
+![totalcursos](image.png)
+
+Sino deseamos ese curso damos click en el curso guardado y podemos quitar el curso e inmeditamente el cotador vuelve a 0 o a su vez a los cursos que esten guardados
+
+![quitarcurso](assets//quitarcurso.png)
+
+
+
+## 📂 Estructura del Código
+
+He organizado el proyecto siguiendo principios de arquitectura limpia y separación de responsabilidades:
+
+```text
+lib/
+├── main.dart                   # Punto de entrada global y configuración de MultiProvider
+├── models/
+│   └── curso_model.dart        # Modelo de datos de las asignaturas
+├── providers/
+│   └── curso_provider.dart      # Lógica de estado global, cálculos e inscripción
+├── screens/
+│   ├── home_screen.dart        # Contenedor principal de navegación por pestañas
+│   ├── detail_screen.dart      # Pantalla/Modal de detalles específicos del curso
+│   ├── favorites_screen.dart   # Vista de cursos guardados/inscritos
+│   └── profile_screen.dart     # Resumen de matrícula con indicadores y métricas
+└── widgets/
+    └── curso_card.dart         # Componente visual interactivo y reutilizable
